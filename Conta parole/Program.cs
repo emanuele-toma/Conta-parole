@@ -6,7 +6,7 @@ namespace Conta_parole
     {
         static void Main(string[] args)
         {
-            int numeroParole = default;
+            int numeroParole = default, caratteri = default;
             string paragrafo = default;
             string messaggio = default;
             ConsoleKeyInfo tasto = default;
@@ -29,7 +29,7 @@ namespace Conta_parole
                 else if (tasto.Key == ConsoleKey.Backspace && paragrafo != null && paragrafo.Length > 0)
                 {
                     paragrafo = paragrafo.Remove(paragrafo.Length - 1);
-                    Console.Write(" \b \b");
+                    Console.Write(" \b");
 
                 }
                 else
@@ -38,14 +38,15 @@ namespace Conta_parole
                 }
             } while (esci == false);
 
-
+            caratteri = paragrafo.ToCharArray().Length;
             numeroParole = paragrafo.Split(" ").Length;
             if (paragrafo.Split(" ")[numeroParole - 1] == "\n")
             {
+                caratteri--;
                 numeroParole--;
             }
-            if (numeroParole == 1) messaggio = $"C'è {numeroParole} parola";
-            if (numeroParole > 1) messaggio = $"Ci sono {numeroParole} parole";
+            if (numeroParole == 1) messaggio = $"C'è {numeroParole} parola e {caratteri} caratteri";
+            if (numeroParole > 1) messaggio = $"Ci sono {numeroParole} parole e {caratteri} caratteri";
             Console.WriteLine("\n\n" + messaggio);
             Console.Write("Premi un tasto per continuare...");
             Console.ReadKey();

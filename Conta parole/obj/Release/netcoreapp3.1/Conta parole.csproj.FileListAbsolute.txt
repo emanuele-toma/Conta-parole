@@ -10,3 +10,4 @@ C:\Users\bhz_ema\source\repos\Conta parole\Conta parole\obj\Release\netcoreapp3.
 C:\Users\bhz_ema\source\repos\Conta parole\Conta parole\obj\Release\netcoreapp3.1\Conta parole.dll
 C:\Users\bhz_ema\source\repos\Conta parole\Conta parole\obj\Release\netcoreapp3.1\Conta parole.pdb
 C:\Users\bhz_ema\source\repos\Conta parole\Conta parole\obj\Release\netcoreapp3.1\Conta parole.genruntimeconfig.cache
+C:\Users\bhz_ema\source\repos\Conta parole\Conta parole\obj\Release\netcoreapp3.1\Conta parole.csprojAssemblyReference.cache
